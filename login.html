@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="css-style.css">
+</head>
+<body class="hey">
+  <section>
+    <div class="loginbox">
+      <img src="image/avatar.jpg" class="avatar" alt="Avatar">
+      <h1>Login</h1>
+      <form method="post" action="php/login.php">
+        <div class="form-input">
+          <input 
+            style="text-align: center; color: whitesmoke; width: 100%; height: 30px; border-color: rgb(249, 242, 242); background-color: rgba(44, 62, 80, 0.7);" 
+            type="text" 
+            name="email" 
+            placeholder="Enter your email" 
+            required
+          >
+        </div>
+        <div class="form-input">
+          <input 
+            style="text-align: center; color: whitesmoke; width: 100%; height: 30px; border-color: rgb(249, 242, 242); background-color: rgba(44, 62, 80, 0.7);" 
+            type="password" 
+            name="password" 
+            placeholder="Password" 
+            required
+          >
+        </div>
+        <div class="form-input">
+          <input 
+            type="submit" 
+            class="btn3" 
+            name="login_user" 
+            value="Login"
+          >
+        </div>
+        <p style="color: rgba(255, 255, 255, 0.65);">
+          Not yet a member? <br><a href="register.html" style="color: rgb(205, 28, 90);">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

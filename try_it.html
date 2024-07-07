@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <title>Sports Car</title>
+    <link href="css-style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header section start page -->
+    <nav id="navbar">
+      <div id="logo">
+        <img src="image/logo1.jpg" />
+      </div>
+      <!----Linking Web Page-->
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="gl.html">GALLERY</a></li>
+        <li><a href="try_it.html">TEST_DRIVE</a></li>
+        <li><a href="php/feedback.php">FEEDBACK</a></li>
+      </ul>
+    </nav>
+
+    <div class="container2">
+      <div class="contact-box">
+        <div class="left">
+          <video controls width="100%" height="100%" autoplay loop muted hide>
+            <source src="image/Sports-Cars-Lover-Whatsapp-Status-Video-2021.mp4" />
+          </video>
+        </div>
+        <div class="right">
+          <h2>Test Drive</h2>
+          <p class="text">
+            Are u trying to choose a new car but having trouble doing so? Stay
+            calm! Before making ur decision, schedule a test drive for one of
+            car models. It's ur move!
+          </p>
+          <form
+            action="php/try_form.php"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <select name="model" class="field" required>
+              <option value="Lamborghini Huracan">Lamborghini Huracan</option>
+              <option value="Ferrari 488 GTB">Ferrari 488 GTB</option>
+              <option value="Tota Supra">Tota Supra</option>
+              <option value="McLaren 720S">McLaren 720S</option>
+              <option value="Mercedes Benz GT">Mercedes Benz GT</option>
+              <option value="Audi R8">Audi R8</option>
+              <option value="Ford Mustang">Ford Mustang</option>
+              <option value="Porche 911">Porche 911</option>
+              <option value="Bugatti Chiron">Bugatti Chiron</option>
+              <option value="Aston Martin Vanquis">Aston Martin Vanquis</option>
+              <option value="Models">Models</option>
+            </select>
+            <!-- <select id="country" name="select" class="field" >
+              <option value="">Select Country</option>
+              
+            </select> -->
+            <select name="state" class="field" required>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Ladakh">Ladakh</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Orissa">Orissa</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Select State">Select State</option>
+            </select>
+            <select name="city" class="field" required>
+              <option value="Amritsar">Amritsar</option>
+              <option value="Agra">Agra</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Ajmer">Ajmer</option>
+              <option value="Ambala">Ambala</option>
+              <option value="Bilaspur">Bilaspur</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Coimbatore">Coimbatore</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Faridabad">Faridabad</option>
+              <option value="Gurgaon">Gurgaon</option>
+              <option value="Guwahati">Guwahati</option>
+              <option value="Indore">Indore</option>
+              <option value="Jaisalmer">Jaisalmer</option>
+              <option value="Jalandhar">Jalandhar</option>
+              <option value="Jodhpur">Jodhpur</option>
+              <option value="Junagadh">Junagadh</option>
+              <option value="Kochi">Kochi</option>
+              <option value="Ludhiana">Ludhiana</option>
+              <option value="Mohali">Mohali</option>
+              <option value="Mysore">Mysore</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Noida">Noida</option>
+              <option value="Patiala">Patiala</option>
+              <option value="Panipat">Panipat</option>
+              <option value="Pune">Pune</option>
+              <option value="Rajkot">Rajkot</option>
+              <option value="Raigarh">Raigarh</option>
+              <option value="Rishikesh">Rishikesh</option>
+              <option value="Roorkee">Roorkee</option>
+              <option value="Solan">Solan</option>
+              <option value="Surat">Surat</option>
+              <option value="Tirupati">Tirupati</option>
+              <option value="Udaipur">Udaipur</option>
+              <option value="Ujjain">Ujjain</option>
+              <option value="Varanasi">Varanasi</option>
+              <option value="Vijayawada">Vijayawada</option>
+              <option value="Visakhapatnam">Visakhapatnam</option>
+              <option value="Select City">Select City</option>
+              
+            </select>
+            <!-- <select id="dealer" name="dealer" class="field" >
+          <option value="">Dealer</option>
+        </select> -->
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="field"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-Mail"
+              class="field"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="+91 987 789 1221"
+              class="field"
+              required
+            />
+            <input type="submit" value="Submit" class="btn3" /><br /><br />
+            <input type="reset" value="Clear" class="btn3" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 2px;
+  left: 10px;
+  width: 355px;
+  padding: 10px;
+  color: #fff;
+}
+
+.confirmation p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.thnks p {
+  font-size: 20px;
+  height: 5px;
+}
+
+.text {
+  width: 350px;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.btn_wrapper {
+  text-align: center;
+}
+
+.link1 input[type="submit"],
+.link2 input[type="submit"] {
+  width: 100%;
+  padding: 11px 0;
+  border: 1px solid white;
+  background-color: black;
+  color: rgb(205, 28, 90);
+  transition: 0.3s ease-in-out;
+  font-size: 17px;
+}
+
+.link1 input[type="submit"]:hover,
+.link2 input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.foot_box {
+  margin-top: 25px;
+  border: 1px solid rgb(92, 90, 90);
+  padding: 0 19px;
+  font-size: 17px;
+}
+/* FAQ */
+body {
+  min-height: 560px;
+  background: #101010;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+
+}
+
+.accordion {
+  margin-left: 40px;
+  width: 900px;
+  display: flex;  
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.content-accordion {
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.question-answer {
+  border-bottom: 1.4px solid black;
+  width: 380px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-img {
+  position: relative;
+  width: 420px;
+  top: 80px;
+}
+
+.title-question {
+  margin: 15px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.question-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.answer {
+  font-size: 20px;
+  line-height: 1.5;
+  display: none;
+}
+
+.show-text .answer {
+  display: block;
+}
